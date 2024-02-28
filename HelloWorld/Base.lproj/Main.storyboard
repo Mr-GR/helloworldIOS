@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xz9-CY-DAF">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xz9-CY-DAF" userLabel="TxtName">
                                 <rect key="frame" x="96.666666666666686" y="124" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="mFQ-Y6-ycK"/>
@@ -41,6 +41,9 @@
                                 <rect key="frame" x="147.66666666666666" y="173" width="98" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tap Here!"/>
+                                <connections>
+                                    <action selector="showOutput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7W5-kn-Byg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7um-6z-OY7">
                                 <rect key="frame" x="196.66666666666666" y="223" width="0.0" height="0.0"/>
@@ -62,6 +65,10 @@
                             <constraint firstItem="gtA-Hj-fIA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zYM-l5-T88"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TxtName" destination="Xz9-CY-DAF" id="oxx-TN-ThK"/>
+                        <outlet property="lblOutput" destination="7um-6z-OY7" id="vok-vM-9od"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
